@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro da liga dos astronautas</title>
+  </head>
+  <body>
+    <h2>Cadastro da liga dos astronautas</h2>
+    <br />
+    <div>
+      <form action="">
+            <label for="fname">Nome: </label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Insira seu nome"
+              required
+            />
+        </div>
+        <br />
+        <div>
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Insira seu email"
+              required
+            />
+            -
+            <label for="pwd">Senha: </label>
+            <input
+              type="password"
+              id="pwd"
+              name="pwd"
+              placeholder="Insira sua senha"
+              required
+            />
+        </div>
+        <br />
+        <div>
+            <label for="bday">Data de nascimento: </label>
+            <input
+              type="date"
+              name="bday"
+              id="bday"
+              placeholder="dd/mm/aaaa"
+              required
+            />
+            -
+            <label for="photo">Foto: </label>
+            <input
+              type="file"
+              name="photo"
+              id="photo"
+              placeholder="Envie sua imagem de perfil"
+              required
+            />
+        </div>
+        <br />
+        <div>
+            <label for="nacio">Nacionalidade: </label>
+            <select name="nacio" id="nacio">
+              <option value="Russia">Russo</option>
+              <option value="Brazil">Brasileiro</option>
+              <option value="north">Norte-Americano</option>
+              <option value="europe">Europeu</option>
+            </select>
+            - Gênero:
+            <input type="radio" id="gender" name="gender" value="male" />
+            <label for="male">Homem</label>
+            <input type="radio" id="gender" name="gender" value="female" />
+            <label for="female">Mulher</label>
+        </div>
+        <br>
+        <div>
+            Suas principais habilidades:<br>
+            <input type="checkbox" name="int" id="int" />
+            <label for="checkbox">Inteligência |</label>
+            <input type="checkbox" name="res" id="res" />
+            <label for="checkbox">Resiliência |</label>
+            <input type="checkbox" name="fis" id="fis" />
+            <label for="checkbox">Preparo físico |</label>
+            <input type="checkbox" name="edu" id="edu" />
+            <label for="checkbox">Educação |</label>
+        </div>
+        <br />
+        <div>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Por que você gostaria de ser um astronauta?"
+            ></textarea>
+        </div>
+        <br />
+          <input type="submit" value="Enviar" />
+      </form>
+  </body>
+</html>
