@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de inscrição</title>
+  </head>
+  <body>
+    <h1>Formulário de inscrição</h1>
+    <form action="">
+      <!-- Nome -->
+      <label for="name">Nome: </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Ex.: Lucas Rodrigues"
+        required
+      />
+      <br />
+      <br />
+      <!-- E-mail -->
+      <label for="email">E-mail: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="lucas@email.com"
+      />
+      <br />
+      <br />
+      <!-- WhatsApp -->
+      <label for="wpp">WhatsApp: </label>
+      <input type="number" name="wpp" id="wpp" placeholder="(01) 2345-6789" />
+      <br />
+      <br />
+      <!--Área de atuação -->
+      <label for="">Área de atuação: </label>
+      <br />
+      <input type="radio" name="area" id="dev" value="dev" />
+      <label for="dev">Desenvolvedor | </label>
+      <input type="radio" name="area" id="qa" value="qa" />
+      <label for="qa">Quality Assurance (QA) | </label>
+      <input type="radio" name="area" id="ads" value="ads" />
+      <label for="ads">Análise de Dados | </label>
+      <input type="radio" name="area" id="infra" value="infra" />
+      <label for="infra">Infraestrutura | </label>
+      <input type="radio" name="area" id="sec" value="sec" />
+      <label for="sec">Cibersegurança | </label>
+      <br />
+      <br />
+      <!-- Observações -->
+      <label for="about">Sobre você: </label>
+      <br />
+      <textarea
+        name="about"
+        id="about"
+        placeholder="Fale sobre você..."
+      ></textarea>
+      <br />
+      <br />
+      <!-- Deseja email -->
+      <input type="checkbox" name="invite" id="invite" />
+      <label for="invite">Desejo receber as novidades por e-mail</label>
+      <br />
+      <br />
+      <input type="submit" value="Enviar!" />
+    </form>
+  </body>
+</html>
